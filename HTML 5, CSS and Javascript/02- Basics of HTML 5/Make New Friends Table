@@ -1,0 +1,10 @@
+<body>
+    <h4 style="background-color:#000080;text-align:left;color:#ff9900"><span> <a href=""
+                style="background-color:#000080;">Home</a> </span> <a>Services</a> <a>About Us</a> <a>Contact Us</a>
+        <a>Career</a> </h4>
+    <h2 style="text-align:left;color:#0000ff;">
+      Welcome to MakeNewFriends.com
+    </h2>
+    <h2>Welcome to MakeNewFriends.com</h2> <em><a>Click here to Login</a></em> <a>Click here to Create New Account</a>
+    <script src="scripts/index.js"></script>
+</body>
