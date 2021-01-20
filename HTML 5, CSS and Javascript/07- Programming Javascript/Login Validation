@@ -1,0 +1,20 @@
+<body>
+    <form>
+        <h1 align="center">Login Page</h1>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td> User Name: </td>
+                    <td> <input type="text"> </td>
+                </tr>
+                <tr>
+                    <td> Password: </td>
+                    <td> <input type="password"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="Login" onclick="UserLogin()"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
