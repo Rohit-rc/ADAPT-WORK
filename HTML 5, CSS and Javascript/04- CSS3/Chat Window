@@ -1,10 +1,35 @@
-<body style="background-color: #ffc0cb">
-    <h1 style="color: #0000ff" align='center'>Welcome to Friend's Chat</h1>
+<style>
+    .p1 {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .p2 {
+        font-weight: 700;
+    }
+
+    div {
+        border: solid black 1px;
+        margin: 5px;
+    }
+
+    textarea {
+        height: 40px;
+        width: 750px;
+    }
+</style>
+</head>
+
+<body style="background-color:#FFC0CB">
+    <h1 style="color:#0000ff;" align="center">Welcome to Friend&#39;s Chat</h1>
     <div>
-        <p><b><i>Hello Jack How are you today?</i></b></p>
+        <p class="p1"> Hello Jack How are you today? </p>
     </div>
     <div>
-        <p><b>I'm fine dear.Thanks for asking!</b></p>
-    </div> <textarea rows="4" cols="75"></textarea> <button type="button"><img
-            src="http://www.clker.com/cliparts/M/E/Q/Q/a/K/button-send-md.png" alt="send"></button>
+        <p class="p2"> I'm fine dear.Thanks for asking! </p>
+    </div>
+    <div>
+        <p class="p1"> Sweet! So, what's ur plan for the day </p>
+    </div> <textarea> Hi i am fine and good , how about you </textarea> <img src="" height="100" width="100" />
+    <script src="scripts/index.js"></script>
 </body>
