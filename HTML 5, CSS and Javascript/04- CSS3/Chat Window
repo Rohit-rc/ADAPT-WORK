@@ -1,0 +1,10 @@
+<body style="background-color: #ffc0cb">
+    <h1 style="color: #0000ff" align='center'>Welcome to Friend's Chat</h1>
+    <div>
+        <p><b><i>Hello Jack How are you today?</i></b></p>
+    </div>
+    <div>
+        <p><b>I'm fine dear.Thanks for asking!</b></p>
+    </div> <textarea rows="4" cols="75"></textarea> <button type="button"><img
+            src="http://www.clker.com/cliparts/M/E/Q/Q/a/K/button-send-md.png" alt="send"></button>
+</body>
