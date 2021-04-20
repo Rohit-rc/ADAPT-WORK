@@ -1,0 +1,10 @@
+JBRS-S3-LI---> Display Customers---> Scanner scanner = new Scanner(System.in); String temp; String[] arr1 = new String[5]; for (int i = 0; i < 5; i++) { arr1[i] = scanner.next(); } for (int i = 0; i < 5; i++) 
+{ 
+for (int j = i+1; j < 5; j++) 
+  { if(arr1[i].compareTo(arr1[j])>0) 
+    { 
+    temp = arr1[i]; arr1[i] = arr1[j]; 
+    arr1[j] = temp; 
+    } 
+   } 
+} System.out.println(Arrays.toString(arr1));
