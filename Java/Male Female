@@ -1,0 +1,8 @@
+ Programming Using Java - Stage 2 Foundation Plus B8
+public class Source { static String[] maleCustomers= {"Akshay","Saran","Sasi Kumar","Prem"}; static String[] femaleCustomers= {"Bharathi","Rekah","Priya","Akansha"}; public static void main(String[] args) { // TODO Auto-generated method stub Scanner sc = new Scanner(System.in); String gender = sc.nextLine(); switch(gender) { case "male": for(int i=0;i<maleCustomers.length;i++) { System.out.println(maleCustomers[i]); }; break; case "female": for(int i=0;i<femaleCustomers.length;i++) { System.out.println(femaleCustomers[i]); } break; default: System.out.println("No Customers Available"); } } } no error but still 0 points
+
+ Like
+	
+Answer this question here...
+	
+Aishwarya Mittal in place of female write Female and same with Male..and it will work
