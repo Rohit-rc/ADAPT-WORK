@@ -1,0 +1,74 @@
+// L3 Use of different type of variable
+
+                                    //Program.java
+public class HelloWorld
+{
+	public static void main(String[] args) 
+	{
+		Product p1;
+		p1=new Product();
+		//until i pass valid value it gives 0 as id
+		p1.setId(-100);
+		//can do for set id and set name also
+
+
+		//if want to print here
+		System.out.println("id ="+p1.getId()", name ="+p1.name);	
+
+		//or print via object
+		p1.print();
+		//similar output in both
+}
+
+}
+
+									//Product.java
+
+public class Product
+{
+	private int id;
+	private String name;
+	private double price;
+	//setter
+	public void setId(int id)
+	{
+		/* to show exception handling
+		if(id<=0)
+		{ 
+			throw new RuntimeException("Invalid id");
+		}
+		id=_id;
+		*/
+		if(id>0)
+		{
+			this.id = id;
+		}
+	}
+	//accessor or getter
+	public int getId()
+	{
+		return id;
+	}
+
+}/*function for print
+/if i write static then it can not access the member variables because the 
+member variables belongs to object but static member can be accessed without
+even creating an object 
+
+we can use the classs name to access them with class name but here we have to
+provide the object of same type into input like in parameters as product p1
+ public void print(Product p1)
+ {
+	p1.id , p1.price 
+	or 
+	Product.id
+	// we can call a static function using an object 
+ }
+ */
+public void print()
+{
+	//print here  dont need pi.print coz calling it from object perespective
+		System.out.println("id ="+getId()", name ="+name);	
+	
+
+}
