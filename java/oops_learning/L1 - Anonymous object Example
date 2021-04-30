@@ -1,0 +1,15 @@
+//Anonymous object example
+public class HelloWorld
+{
+	public static void main(String[] args)
+	{
+		Object a=new Object()
+		{
+			public void sayHello()
+			{
+				System.out.println("Hello World ");
+			}
+		};
+	a.sayHello();
+	}
+}
