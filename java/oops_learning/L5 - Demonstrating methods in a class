@@ -1,0 +1,91 @@
+// L3 Use of different type of variable
+
+                                    //Program.java
+public class Program1
+{
+	public static void main(String[] args) 
+	{
+		Product p1;
+		p1=new Product();
+		//until i pass valid value it gives 0 as id
+		
+		//can do for set id and set name also
+		p1.init(12,"Optical Mouse",5.9);
+		//here if i print something else then it will give error
+
+
+		p1.print();		
+		//or print via object
+	
+		//similar output in both
+}
+
+}
+
+									//Product.java
+
+public class Product
+{
+	private int id;
+	private String name;
+	private double price;
+	//setter
+	public void init(int id, String name , double price)
+	{
+		/* to show exception handling */
+		if(id<=0)
+		{ 
+			throw new RuntimeException("Invalid id");
+		}
+		if(price<=0)
+		{
+			throw new RuntimeException("Invalid price");
+		}
+		
+		if(name==null || name.trim().length()==0)
+		{
+			throw new RuntimeException("Empty name not allowed");
+		}
+		
+			this.id = id;
+			this.name=name;
+			this.price=price;
+	}
+
+//twovalues can also be passsed 
+	public void init(int id, String name )
+	{
+		/* to show exception handling */
+		if(id<=0)
+		{ 
+			throw new RuntimeException("Invalid id");
+		}
+		if(price<=0)
+		{
+			throw new RuntimeException("Invalid price");
+		}
+		
+		if(name==null || name.trim().length()==0)
+		{
+			throw new RuntimeException("Empty name not allowed");
+		}
+		
+			this.id = id;
+			this.name=name;
+			this.price=price;
+	}
+/*function for print
+/if i write static then it can not access the member variables because the 
+member variables belongs to object but static member can be accessed without
+even creating an object 
+
+we can use the classs name to access them with class name but here we have to
+provide the object of same type into input like in parameters as product p1
+
+*/ public void print(Product p1)
+ {
+	// we can call a static function using an object 
+	System.out.println("id ="+id+", name ="+name);	
+
+ }
+ }
