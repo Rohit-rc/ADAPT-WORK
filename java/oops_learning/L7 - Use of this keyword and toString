@@ -1,0 +1,65 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+         Person p1=new Person();
+         p1.setfName("Rohit");
+         p1.setlName("Tomar");
+         p1.setCity("Hapur");
+         
+         System.out.print(p1);
+     }
+}
+
+
+
+class Person
+{
+    
+    private String firstName;
+    private String lastName;
+    private String city;
+    //Person class default constuctor 
+    public Person()
+    {
+        
+        
+    }
+    //getters and setters 
+    public void setfName(String firstName)
+    {
+        this.firstName=firstName;
+    }
+    public String getfName()
+    {
+        return firstName;
+    }
+    public void setlName(String lastName)
+    {
+        this.lastName=lastName;
+    }
+    public String getlName()
+    {
+        return lastName;
+    }
+    public void setCity(String city)
+    {
+        this.city=city;
+    }
+    public String getCity()
+    {
+        return city;
+    }
+    
+    
+    public String toString()
+    {
+        return String.format("Person [%s %s ,%s]",firstName, lastName,city);        
+    }
+}
+
+
+
+
+output like -
+
+Person [Rohit Tomar ,Hapur]
